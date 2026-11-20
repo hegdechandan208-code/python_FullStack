@@ -2,10 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Student(models.Model):
-    name = models.CharField(max_length=100)
-    age = models.IntegerField()
-    email = models.EmailField(unique=True)
-    department = models.CharField(max_length=100)
-
-    def __str__(self):
+    name=models.CharField(max_length=100)
+    email=models.EmailField()
+    age=models.IntegerField() 
+    department=models.CharField(max_length=100)
+    def _str_(self):
         return self.name
